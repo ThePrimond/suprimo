@@ -1,4 +1,7 @@
 import type { Preview } from "@storybook/react";
+import { withChakra } from "./decorators/withChakra";
+
+export const decorators = [withChakra];
 
 const preview: Preview = {
   parameters: {
@@ -10,6 +13,7 @@ const preview: Preview = {
       },
     },
   },
+  decorators: decorators,
 };
 
 export default preview;
