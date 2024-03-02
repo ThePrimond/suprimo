@@ -18,10 +18,22 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Text: Story = {
   args: {
     fieldKey: "email",
-    label: "Email",
+    label: "Username or Email",
+    showLabel: true,
+    placeholder: "",
     type: "email",
+  },
+};
+
+export const Password: Story = {
+  args: {
+    fieldKey: "password",
+    label: "Password",
+    showLabel: true,
+    placeholder: "",
+    type: "password",
   },
 };
