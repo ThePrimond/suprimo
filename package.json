@@ -10,7 +10,8 @@
     "start": "storybook dev -p 6006",
     "build": "storybook build",
     "build-storybook": "storybook build",
-    "test": "vitest"
+    "test": "vitest",
+    "chromatic": "npx chromatic --project-token=chpt_8d42c6a20c06b3a"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
